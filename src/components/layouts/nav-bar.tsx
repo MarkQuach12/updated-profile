@@ -8,10 +8,18 @@ import {
 import { Link } from "react-router-dom";
 import { Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export const NavBar = () => {
-  const [theme, setTheme] = useState("light");
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const currentTheme = mounted ? theme : "light";
 
   return (
     <nav className="w-full">
@@ -55,10 +63,12 @@ export const NavBar = () => {
             <Button
               variant="outline"
               size="icon"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+              onClick={() =>
+                setTheme(currentTheme === "light" ? "dark" : "light")
+              }
               className="cursor-pointer"
             >
-              {theme === "light" ? <Sun /> : <Moon />}
+              {currentTheme === "light" ? <Sun /> : <Moon />}
             </Button>
           </NavigationMenuItem>
         </NavigationMenuList>
