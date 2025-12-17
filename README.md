@@ -71,7 +71,3 @@ export default defineConfig([
   },
 ])
 ```
-=======
-# updated-profile
-Updated profile website
->>>>>>> 3afb3696d5f5b3929cf67dfc49ea570324f644a2
