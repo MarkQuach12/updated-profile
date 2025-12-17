@@ -23,8 +23,8 @@ export const NavBar = () => {
 
   return (
     <nav className="w-full">
-      <NavigationMenu className="flex justify-between items-center gap-4 w-full max-w-full">
-        <NavigationMenuList className="flex justify-center items-center gap-2">
+      <NavigationMenu className="flex justify-between items-center w-full max-w-full">
+        <NavigationMenuList className="flex justify-center items-center">
           <NavigationMenuItem>
             <NavigationMenuLink
               asChild
@@ -68,7 +68,7 @@ export const NavBar = () => {
               }
               className="cursor-pointer"
             >
-              {currentTheme === "light" ? <Sun /> : <Moon />}
+              {currentTheme === "light" ? <Moon /> : <Sun />}
             </Button>
           </NavigationMenuItem>
         </NavigationMenuList>
