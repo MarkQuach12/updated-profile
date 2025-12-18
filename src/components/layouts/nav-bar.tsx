@@ -38,7 +38,7 @@ export const NavBar = () => {
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link to="/about">About</Link>
+              <Link to="/about">About Me</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
