@@ -17,6 +17,7 @@ interface ProjectCardProps {
   badges: string[];
   projectUrl?: string;
   githubUrl?: string;
+  imageUrl?: string;
 }
 
 export const ProjectCard = ({
@@ -26,6 +27,7 @@ export const ProjectCard = ({
   badges,
   projectUrl,
   githubUrl,
+  imageUrl,
 }: ProjectCardProps) => {
   return (
     <Card className="w-full max-w-2xl mx-auto text-left">
@@ -34,6 +36,13 @@ export const ProjectCard = ({
         <CardDescription>
           <p>{description}</p>
         </CardDescription>
+        {imageUrl && (
+          <img
+            src={imageUrl}
+            alt={title}
+            className="w-full h-55 object-cover mx-auto"
+          />
+        )}
       </CardHeader>
       <CardContent>
         <p>{content}</p>

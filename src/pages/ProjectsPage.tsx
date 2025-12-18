@@ -1,4 +1,6 @@
 import { ProjectCard } from "@/components/ProjectCard";
+import HSCRandomToolsImage from "@/assets/HSCRandomTools.png";
+import profileWebsiteImage from "@/assets/profileWebsite.png";
 
 export const ProjectsPage = () => {
   const projects = [
@@ -20,6 +22,7 @@ export const ProjectsPage = () => {
       ],
       projectUrl: "https://hsc-random-tools.vercel.app/",
       githubUrl: "https://github.com/MarkQuach12/HSCRandomTools",
+      imageUrl: HSCRandomToolsImage,
     },
     {
       title: "Profile Website",
@@ -33,6 +36,7 @@ export const ProjectsPage = () => {
         "Vercel",
       ],
       githubUrl: "https://github.com/MarkQuach12/updated-profile",
+      imageUrl: profileWebsiteImage,
     },
   ];
 
