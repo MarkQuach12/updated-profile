@@ -48,7 +48,7 @@ export const NavBar = () => {
   );
 
   return (
-    <nav className="w-full">
+    <nav className="w-full mb-4">
       <NavigationMenu className="flex justify-between items-center w-full max-w-full">
         <NavigationMenuList className="hidden md:flex justify-center items-center">
           {navLinks.map((link) => (

@@ -1,5 +1,7 @@
 import { WorkExperience } from "@/components/experience/WorkExperience";
 import { Extracurricular } from "@/components/experience/Extracurricular";
+import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 export const AboutMePage = () => {
   const experiences = [
@@ -69,32 +71,46 @@ export const AboutMePage = () => {
   ];
 
   return (
-    <div>
-      <h1 className="text-2xl font-bold mb-4">About Me</h1>
-      <p className="text-muted-foreground mb-4">
-        I'm a final year Computer Science and Finance student at UNSW,
-        passionate about software development and education. Beyond that, I
-        enjoy travelling ✈️ and exploring new places, as well as photography 📷
-      </p>
-      <h1 className="text-xl font-bold mb-4">Experience</h1>
-      <div className="flex flex-col gap-4">
-        {experiences.map((experience) => (
-          <WorkExperience
-            key={experience.companyName + experience.position}
-            {...experience}
-          />
-        ))}
-      </div>
+    <div className="space-y-8">
+      <section className="space-y-4">
+        <h1 className="text-3xl font-bold tracking-tight">About Me</h1>
+        <p className="text-base leading-7 text-muted-foreground">
+          I'm a final year Computer Science and Finance student at UNSW,
+          passionate about software development and education. Beyond that,
+          I enjoy travelling ✈️ and exploring new places, as well as
+          photography 📷
+        </p>
+      </section>
 
-      <h1 className="text-xl font-bold mb-4">Extracurricular</h1>
-      <div className="flex flex-col gap-4">
-        {extracurricular.map((extracurricular) => (
-          <Extracurricular
-            key={extracurricular.companyName + extracurricular.position}
-            {...extracurricular}
-          />
-        ))}
-      </div>
+      <Separator />
+
+      <section className="space-y-6">
+        <h2 className="text-2xl font-bold tracking-tight">Work Experience</h2>
+        <div className="flex flex-col gap-6">
+          {experiences.map((experience) => (
+            <Card key={experience.companyName + experience.position}>
+              <CardContent>
+                <WorkExperience {...experience} />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <Separator />
+
+      <section className="space-y-6">
+        <h2 className="text-2xl font-bold tracking-tight">Extracurricular</h2>
+        <div className="flex flex-col gap-6">
+          {extracurricular.map((extracurricular) => (
+            <Card key={extracurricular.companyName + extracurricular.position}>
+              <CardContent>
+                <Extracurricular {...extracurricular} />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
     </div>
   );
 };

@@ -14,18 +14,20 @@ export const Extracurricular = ({
   description,
 }: ExtracurricularProps) => {
   return (
-    <div className="flex flex-col text-left gap-2">
-      <div>
-        <h3 className="text-lg font-bold">{position}</h3>
-        <p className="text-muted-foreground">{companyName}</p>
-        <p className="text-muted-foreground">
+    <div className="flex flex-col text-left gap-4">
+      <div className="space-y-1">
+        <h3 className="text-xl font-bold">{position}</h3>
+        <p className="text-base font-medium text-foreground">{companyName}</p>
+        <p className="text-sm text-muted-foreground">
           {startDate} - {endDate}
         </p>
       </div>
       {description.length > 0 && (
-        <ul className="list-disc list-inside">
-          {description.map((item) => (
-            <li key={item}>{item}</li>
+        <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed">
+          {description.map((item, index) => (
+            <li key={index} className="text-muted-foreground">
+              {item}
+            </li>
           ))}
         </ul>
       )}
