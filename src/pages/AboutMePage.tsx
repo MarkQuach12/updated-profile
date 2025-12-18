@@ -71,8 +71,8 @@ export const AboutMePage = () => {
   return (
     <div>
       <h1 className="text-2xl font-bold mb-4">About Me</h1>
-      <p className="text-sm text-muted-foreground mb-4">
-        I'm a penultimate Computer Science and Finance student at UNSW,
+      <p className="text-muted-foreground mb-4">
+        I'm a final year Computer Science and Finance student at UNSW,
         passionate about software development and education. Beyond that, I
         enjoy travelling ✈️ and exploring new places, as well as photography 📷
       </p>
