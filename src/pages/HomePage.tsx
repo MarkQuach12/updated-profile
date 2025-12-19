@@ -27,6 +27,30 @@ const HomePage = () => {
             and experiences.
           </p>
         </div>
+
+        <div className="grid grid-cols-2 w-full max-w-md mt-6">
+          <div className="flex justify-center">
+            <a
+              href="https://www.linkedin.com/in/mark-quach-a31b1b254/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl underline"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <div className="flex justify-center">
+            <a
+              href="https://github.com/MarkQuach12"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl underline"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );
