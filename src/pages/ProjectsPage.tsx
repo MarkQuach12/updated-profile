@@ -20,6 +20,7 @@ export const ProjectsPage = () => {
         "Vercel",
         "Fly.io",
         "Supabase",
+        "GitHub Actions",
       ],
       projectUrl: "https://hsc-random-tools.vercel.app/",
       githubUrl: "https://github.com/MarkQuach12/HSCRandomTools",
@@ -30,21 +31,23 @@ export const ProjectsPage = () => {
       description: "A website for my profile.",
       content:
         "My profile website is a personal project I built to showcase my skills and projects. It includes a portfolio of my work, a blog, and a contact form.",
-      badges: [
-        "Typescript",
-        "React",
-        "Tailwind CSS",
-        "Shadcn UI",
-        "Vercel",
-      ],
+      badges: ["Typescript", "React", "Tailwind CSS", "Shadcn UI", "Vercel"],
       githubUrl: "https://github.com/MarkQuach12/updated-profile",
       imageUrl: profileWebsiteImage,
     },
     {
       title: "CleanSlate (Hackathon Project)",
       description: "A project for the Hackathon.",
-      content: "CleanSlate is a project I built and led a team of 5 for the Hackathon. It is a mindfulness application which capitalises on the under-utilised benefits associated with negative reinforcement, while simultaneously empowering users to maximise the overall impact.",
-      badges: ["React", "Tailwind CSS", "Tailwind UI", "Node.js", "ExpressJS", "OpenAI API"],
+      content:
+        "CleanSlate is a project I built and led a team of 5 for the Hackathon. It is a mindfulness application which capitalises on the under-utilised benefits associated with negative reinforcement, while simultaneously empowering users to maximise the overall impact.",
+      badges: [
+        "React",
+        "Tailwind CSS",
+        "Tailwind UI",
+        "Node.js",
+        "ExpressJS",
+        "OpenAI API",
+      ],
       githubUrl: "https://github.com/MarkQuach12/CleanSlate",
     },
   ];
