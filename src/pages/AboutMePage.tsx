@@ -39,7 +39,7 @@ export const AboutMePage = () => {
     },
     {
       companyName: "Software Development Society (UNSW)",
-      position: "Vice President",
+      position: "Vice President (Internals) and Grievance Officer",
       startDate: "October 2024",
       endDate: "December 2025",
       description: [

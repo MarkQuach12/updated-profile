@@ -31,7 +31,7 @@ const HomePage = () => {
         <div className="grid grid-cols-2 w-full max-w-md mt-6">
           <div className="flex justify-center">
             <a
-              href="https://www.linkedin.com/in/mark-quach-a31b1b254/"
+              href="https://www.linkedin.com/in/mark-quach-4570362a0/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl underline"
