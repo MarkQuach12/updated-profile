@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vercel-build": "vite build"
+    "vercel-build": "node node_modules/vite/bin/vite.js build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
