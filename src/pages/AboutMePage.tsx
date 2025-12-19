@@ -5,13 +5,13 @@ import { Separator } from "@/components/ui/separator";
 
 export const AboutMePage = () => {
   const experiences = [
-    {
-      companyName: "Ernest & Young",
-      position: "Software Engineer Intern",
-      startDate: "December 2025",
-      endDate: "Present",
-      description: ["MCP Project"],
-    },
+    // {
+    //   companyName: "Ernest & Young",
+    //   position: "Software Engineer Intern",
+    //   startDate: "December 2025",
+    //   endDate: "Present",
+    //   description: ["MCP Project"],
+    // },
     {
       companyName: "Justice Support Centre",
       position: "Software Developer Intern",
@@ -22,6 +22,7 @@ export const AboutMePage = () => {
         "Designed and deployed Python data cleansing pipelines to validate, standardise, and transform records, cutting average invoice processing time from an hour a week to 4 minutes a week whilst improving reliability of accounting reports.",
         "Developed a browser based stock inventory manager using HTML, CSS and JavaScript for use across 3 office locations, improving stock tracking reliability and removing the need for multiple inconsistent Excel sheets.",
       ],
+      technologies: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
     },
   ];
 
@@ -76,9 +77,9 @@ export const AboutMePage = () => {
         <h1 className="text-3xl font-bold tracking-tight">About Me</h1>
         <p className="text-base leading-7 text-muted-foreground">
           I'm a final year Computer Science and Finance student at UNSW,
-          passionate about software development and education. Beyond that,
-          I enjoy travelling ✈️ and exploring new places, as well as
-          photography 📷
+          passionate about software development and education. Beyond that, I
+          enjoy travelling ✈️ and exploring new places, as well as photography
+          📷
         </p>
       </section>
 

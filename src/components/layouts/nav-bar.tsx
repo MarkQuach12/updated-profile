@@ -21,7 +21,7 @@ import {
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Me" },
-  { to: "/blog", label: "Blog" },
+  // { to: "/blog", label: "Blog" },
   { to: "/projects", label: "Projects" },
 ];
 

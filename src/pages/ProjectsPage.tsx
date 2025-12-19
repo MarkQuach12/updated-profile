@@ -16,6 +16,7 @@ export const ProjectsPage = () => {
         "Tailwind CSS",
         "Python",
         "Flask",
+        "BeautifulSoup",
         "Vercel",
         "Fly.io",
         "Supabase",
@@ -33,17 +34,25 @@ export const ProjectsPage = () => {
         "Typescript",
         "React",
         "Tailwind CSS",
+        "Shadcn UI",
         "Vercel",
       ],
       githubUrl: "https://github.com/MarkQuach12/updated-profile",
       imageUrl: profileWebsiteImage,
     },
+    {
+      title: "CleanSlate (Hackathon Project)",
+      description: "A project for the Hackathon.",
+      content: "CleanSlate is a project I built and led a team of 5 for the Hackathon. It is a mindfulness application which capitalises on the under-utilised benefits associated with negative reinforcement, while simultaneously empowering users to maximise the overall impact.",
+      badges: ["React", "Tailwind CSS", "Tailwind UI", "Node.js", "ExpressJS", "OpenAI API"],
+      githubUrl: "https://github.com/MarkQuach12/CleanSlate",
+    },
   ];
 
   return (
     <>
-      <h1 className="text-2xl font-bold mb-4">My Projects</h1>
-      <p className="text-sm text-muted-foreground mb-4">
+      <h1 className="text-3xl font-bold mb-4">My Projects</h1>
+      <p className="text-muted-foreground mb-4">
         Here are some of my projects. You can view the source code on GitHub.
       </p>
       <div className="flex flex-col gap-4">
